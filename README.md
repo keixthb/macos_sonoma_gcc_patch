@@ -1,4 +1,4 @@
-#MacOS Sonoma cmake%gcc@13.2.0 Patch
+# MacOS Sonoma cmake%gcc@13.2.0 Patch
 
 **Release date:** 27 December 2023
 
