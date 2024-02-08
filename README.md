@@ -15,13 +15,18 @@ Clone the repository and modify the files on your system. After all the files ar
 sysctl -n hw.physicalcpu
 ```
 
-This will return an integer similar to ```nproc``` in linux. After getting the number of cores in your system, we install spack with the following:
+This will return an integer similar to ```nproc``` in linux. After getting the number of cores in your system:
 
 ```console
-git clone --depth=100 https://github.com/spack/spack.git ~/spack
-echo "source ~/spack/share/spack/setup-env.sh" >> ~/.zshrc
-echo "spacktivate" >> ~/.zshrc
+cd macos_sonoma_gcc_patch
+sh install_spack.sh
+```
+
+After this runs successfully,
+
+```console
 source ~/.zshrc
+spacktivate
 ```
 
 Now, we will build the latest gcc compiler. At the time of writing, the latest compiler is gcc@13.2.0. We can get the current latest compiler by using:
